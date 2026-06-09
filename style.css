@@ -1,215 +1,34 @@
-body{
-margin:0;
-font-family:'Segoe UI',sans-serif;
-background:#faf9f7;
-color:#2f2f2f;
-line-height:1.7;
-}
 
-nav{
-position:sticky;
-top:0;
-z-index:1000;
-background:rgba(255,255,255,.95);
-backdrop-filter:blur(10px);
-padding:18px 6%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #ececec;
-}
-
-.logo{
-font-size:32px;
-font-weight:700;
-color:#b78b4a;
-}
-
-ul{
-display:flex;
-gap:28px;
-list-style:none;
-padding:0;
-margin:0;
-}
-
-ul a{
-text-decoration:none;
-color:#555;
-font-weight:500;
-}
-
-.cta,.btn{
-background:#b78b4a;
-color:white;
-text-decoration:none;
-padding:14px 24px;
-border-radius:999px;
-font-weight:600;
-transition:.3s;
-}
-
-.cta:hover,
-.btn:hover{
-transform:translateY(-2px);
-box-shadow:0 8px 20px rgba(183,139,74,.25);
-}
-
-.hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:70px;
-align-items:center;
-padding:90px 8%;
-min-height:85vh;
-}
-
-.hero img{
-width:100%;
-max-width:520px;
-display:block;
-margin:auto;
-border-radius:28px;
-box-shadow:0 20px 40px rgba(0,0,0,.12);
-}
-
-.tag{
-font-size:13px;
-letter-spacing:4px;
-font-weight:700;
-color:#b78b4a;
-text-transform:uppercase;
-}
-
-h1{
-font-size:78px;
-line-height:.95;
-margin:10px 0;
-font-weight:700;
-color:#1f1f1f;
-}
-
-.subtitle{
-font-size:22px;
-color:#666;
-max-width:550px;
-margin-top:25px;
-}
-
-.availability{
-display:inline-block;
-margin-top:18px;
-background:white;
-padding:10px 18px;
-border-radius:999px;
-font-size:14px;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
-}
-
-.buttons{
-display:flex;
-gap:14px;
-margin-top:30px;
-flex-wrap:wrap;
-}
-
-.ghost{
-background:transparent;
-border:2px solid #b78b4a;
-color:#b78b4a;
-}
-
-section{
-padding:90px 8%;
-}
-
-h2{
-font-size:42px;
-margin-bottom:30px;
-color:#1f1f1f;
-}
-
-.cards,
-.icons{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:18px;
-}
-
-.cards div,
-.icons span{
-background:white;
-padding:22px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 6px 20px rgba(0,0,0,.06);
-}
-
-.benefits{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.benefits div{
-background:white;
-padding:24px;
-border-radius:20px;
-box-shadow:0 6px 20px rgba(0,0,0,.06);
-}
-
-#portfolio{
-text-align:center;
-}
-
+body{margin:0;font-family:Georgia,serif;background:#f8f3e7;color:#4d3a1f}
+nav{position:sticky;top:0;background:#fffdf9;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #eadfc5}
+.logo{font-size:38px;color:#c79b37}
+ul{display:flex;gap:24px;list-style:none;padding:0}
+.cta,.btn{background:#c79b37;color:white;text-decoration:none;padding:12px 18px;border-radius:30px}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:40px 6%}
+.hero img{width:100%;border-radius:20px}
+h1{font-size:110px;color:#c79b37;margin:0}
+h2{font-size:72px;color:#b8860b;margin:0;font-style:italic}
+.tag{letter-spacing:6px}
+.ghost{background:transparent;border:2px solid #c79b37;color:#c79b37}
+.buttons{display:flex;gap:12px;margin-top:20px}
+section{padding:50px 6%}
+h3{color:#b8860b;font-size:34px}
+.two-cols,.brands{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.icons,.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:15px}
+.icons span,.cards div,.portfolio-card{background:white;padding:18px;border-radius:16px;box-shadow:0 3px 10px rgba(0,0,0,.08)}
+.benefits{background:linear-gradient(to right,#f3e4bf,#f9f3e7);display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
 video{
-width:350px;
-max-width:100%;
-border-radius:24px;
-box-shadow:0 15px 30px rgba(0,0,0,.15);
+    width: 320px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;
 }
-
-footer{
-background:#1f1f1f;
-color:white;
-padding:80px 8%;
-text-align:center;
-}
-
-footer h2{
-color:white;
-}
-
-footer p{
-color:#d5d5d5;
-}
-
+footer{background:linear-gradient(to right,#e7c680,#d8a33b);padding:50px 6%}
 @media(max-width:900px){
-
-.hero{
-grid-template-columns:1fr;
-text-align:center;
-padding-top:40px;
+.hero,.two-cols,.brands,.benefits{grid-template-columns:1fr}
+ul{display:none}
+h1{font-size:60px}
+h2{font-size:42px}
 }
 
-.hero img{
-max-width:350px;
-}
-
-ul{
-display:none;
-}
-
-h1{
-font-size:52px;
-}
-
-h2{
-font-size:34px;
-}
-
-.buttons{
-justify-content:center;
-}
-
-}
